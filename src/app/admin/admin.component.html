@@ -1,0 +1,13 @@
+  <mat-drawer-container class="example-container" autosize>
+    <mat-drawer class="text-center" #drawer mode="side">
+      <a routerLink="/Inicio" class="w-100" mat-button> <span>Home</span> </a><br>
+      <a routerLink="/Panel" class="w-100" mat-button> <span>Dashboard</span> </a>
+    </mat-drawer>
+    <div class="example-sidenav-content">
+      <button type="button" mat-button (click)="drawer.toggle()">
+        Toggle sidenav
+      </button>
+    </div>
+    <router-outlet></router-outlet>
+  </mat-drawer-container>
+
