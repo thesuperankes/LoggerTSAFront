@@ -7,18 +7,24 @@ import { AppComponent } from './app.component';
 
 import { MaterialModule } from './Common/material/material.module';
 
-import { AdminModule } from './admin/admin.module'
+import { HomeComponent } from './home/home.component'
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+
+import { SendMailService } from './Service/send-mail.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    AdminModule,
-    MaterialModule
+    MaterialModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

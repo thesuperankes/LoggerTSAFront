@@ -16,7 +16,7 @@ import {
   // NgbAccordionModule,
   // NgbTypeaheadModule,
   // NgbTimepickerModule,
-  // NgbDatepickerModule,
+  NgbDatepickerModule,
   // NgbPaginationModule,
   // NgbProgressbarModule
 
@@ -42,7 +42,7 @@ import {
     // NgbAccordionModule,
     // NgbTypeaheadModule,
     // NgbTimepickerModule,
-    // NgbDatepickerModule,
+    NgbDatepickerModule,
     // NgbPaginationModule,
     // NgbProgressbarModule
   ]

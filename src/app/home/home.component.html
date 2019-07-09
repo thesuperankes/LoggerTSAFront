@@ -1,0 +1,45 @@
+<mat-toolbar color="primary">
+        <span>Bienvenido</span>
+      </mat-toolbar>
+
+<div class="container">
+    <br>
+        <div class="row">
+            <div class="col-md-6">
+                <mat-form-field class="w-100">
+                    <input matInput placeholder="Ip" [(ngModel)]="InfoData.IpData">
+                </mat-form-field>
+            </div>
+            <div class="col-md-6">
+                <mat-form-field class="w-100">
+                    <input matInput placeholder="Latitud" [(ngModel)]="InfoData.Latitud">
+                </mat-form-field>
+            </div>
+            <div class="col-md-6">
+                <mat-form-field class="w-100">
+                    <input matInput placeholder="Longitud" [(ngModel)]="InfoData.Longitud">
+                </mat-form-field>
+            </div>
+            <div class="col-md-6">
+                <mat-form-field class="w-100">
+                    <input matInput placeholder="NumeroPC" [(ngModel)]="InfoData.NumeroPC">
+                </mat-form-field>
+            </div>
+            <div class="col-md-6">
+                <mat-form-field class="w-100">
+                    <input matInput [matDatepicker]="picker" [(ngModel)]="InfoData.Fecha" placeholder="Fecha actual">
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                </mat-form-field>
+
+            </div>
+            <div class="col-md-6">
+                <mat-checkbox [(ngModel)]="InfoData.Frezzer">¿Se eliminara al final del dia?</mat-checkbox>
+            </div>
+            <div class="col-md-12">
+                <button mat-flat-button (click)="SendMail()" class="w-100" color="primary">Enviar</button>
+            </div>
+        </div>
+
+        <h3>{{ IpPublic }}</h3>
+</div>
